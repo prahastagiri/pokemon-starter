@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import Pokemon from './components/Pokemon_mainContent.js';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="desktop">
+        <Pokemon/>
+      </div>
+      <div className="mobile">
+        <img style={{width:'80%',boxShadow:'10px 10px 5px -6px rgba(0,0,0,0.39)',borderRadius:'10px'}} src={process.env.PUBLIC_URL + '/background/masahiro.png'}/>
+        <p className="text">R.I.P Black Guy</p>
+      </div>
     </div>
   );
 }
