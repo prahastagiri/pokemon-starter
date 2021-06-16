@@ -7,9 +7,9 @@ function App() {
       <div className="desktop">
         <Pokemon/>
       </div>
-      <div className="mobile">
+      <div className="mobile funny">
         <img style={{width:'80%',boxShadow:'10px 10px 5px -6px rgba(0,0,0,0.39)',borderRadius:'10px'}} src={process.env.PUBLIC_URL + '/background/masahiro.png'}/>
-        <p className="text">R.I.P Black Guy</p>
+        <p className="text">HOW</p>
       </div>
     </div>
   );
